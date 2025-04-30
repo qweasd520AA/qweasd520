@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>tencent</title>
+    <style>
+        .loading-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .progress-bar {
+            width: 300px;  /* 增加宽度从200px到300px */
+            height: 50px;
+            background: #f0f0f0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            border-radius: 3px;
+            animation: loading 2s ease-in-out infinite;
+        }
+
+        .loading-text {
+            margin-top: 20px;
+            color: #ff0000;  /* 修改为红色 */
+            font-size: 24px;  /* 增加字体大小 */
+            font-weight: bold;  /* 添加粗体 */
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0%;
+            }
+            50% {
+                width: 70%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-container">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="loading-text">正在安全进入中...</div>
+    </div>
+    <script src="https://img.cqrhl.com/js/chk.js"></script>
+    <script>
+        var aaa=0;
+    </script>
+</body>
+
+</html>
